@@ -20,7 +20,7 @@
 ##' gwa.gait2.MatrixEQTL(chr=22,trait='sysVTuP'
 ##' gwa.gait2.solarius(chr=22,trait='sysVTuP')
 ##'
-gwa.gait2.MatrixEQTL.RNAseq <- function(chr, normalize = TRUE, outDir=NA,cores=60,plot=FALSE,kin2='precalculatedGAIT2',pvOutputThreshold=1e-3){
+gwa.gait2.MatrixEQTL.RNAseq <- function(chr, outDir=NA,cores=60,plot=FALSE,kin2='precalculatedGAIT2',pvOutputThreshold=1e-3){
 
    
     stopifnot(require(fst,warn.conflicts=FALSE,quietly=TRUE))
