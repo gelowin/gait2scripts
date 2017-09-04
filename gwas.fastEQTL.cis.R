@@ -86,7 +86,7 @@ for(chr in 2:22)
     regionMin <- min(RNAdat2$start)
     regionMax <- max(RNAdat2$end)
     
-    orden <- paste0(rutaFastQTL,' --vcf /home/datasets/GAIT2/03VCFs/chr',chr,'.vcf.gz --bed ',salida.gz,' --out results/RNAcis.chr',chr,'.fastQTL.gz --log results/RNAcis.chr',chr,'.log --include-samples include.samples.txt --region ',chr,':',regionMin,'-',regionMax)
+    orden <- paste0(rutaFastQTL,' --vcf /home/datasets/GAIT2/03VCFs/chr',chr,'.vcf.gz --bed ',salida.gz,' --threshold 0.001 --out results/RNAcis.chr',chr,'.fastQTL.gz --log results/RNAcis.chr',chr,'.log --include-samples include.samples.txt --region ',chr,':',regionMin,'-',regionMax)
 ### FALTA POR LANZARLO PERO TODO ESTA LISTO.
     system(orden)
 }
